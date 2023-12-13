@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@500&family=Lora&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div id="main-container">
+        <div id="left">
+            <div id="odin-container">
+                <img id="odin-img" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="odin">
+                <h2 id="odin-text">ODIN</h2>
+            </div>
+            <div id="footer">
+                <p class="p-footer">Photo by <a class="a-footer" href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on <a class="a-footer" href="https://unsplash.com">Unsplash</a></p>
+            </div>
+        </div>
+
+        <div id="right">
+            <div id="first">
+               <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</h3>
+               <h3>You know you want to.</h3>
+            </div>
+            <form action="" method="get">
+                <div id="second">
+                    <h3>Let's do this!</h3>
+                        <div class="form-row">
+                            <div class="form-div">
+                                <label for="">FIRST NAME</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-div">
+                                <label for="">LAST NAME</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-div">
+                                <label for="">EMAIL</label>
+                                <input type="email" required>
+                            </div>
+                            <div class="form-div">
+                                <label for="">PHONE NUMBER</label>
+                                <input type="tel">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-div">
+                                <label for="">PASSWORD</label>
+                                <input type="password" id="password" style="margin-bottom: 0;" required>
+                                <p id="error">Passwords do not match</p>
+                            </div>
+                            <div class="form-div">
+                                <label for="">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirm-password" oninput="checkPasswords()" required>
+                            </div>
+                        </div>
+                    
+                </div>
+                <div id="third">
+                    <button type="button" onclick="checkPasswords()" id="submit">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
